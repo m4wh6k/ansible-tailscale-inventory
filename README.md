@@ -15,7 +15,8 @@ and Linux, but not Windows.
 `ansible-tailscale-inventory.py` automatically provides a few groups.
 There are groups of hosts for each operating system (`macOS`, `linux`, etc).
 Online hosts are found in the `online` group, offline hosts in the `offline`
-group. The `self` group includes the local host.
+group. The `self` group includes the local host. Each Tailscale tag that has
+at least one host will be a group as well.
 
 ## Inventory Metadata
 The inventory automatically adds all available Tailscale IPs as a list in the

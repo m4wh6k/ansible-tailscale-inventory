@@ -47,4 +47,12 @@ for v in all_hosts:
         inventory[v["OS"]] = {"hosts": []}
     inventory[v["OS"]]["hosts"].append(v["HostName"])
 
+    if "Tags" in v:
+        for tag in v["Tags"]:
+            safe_tag = tag.replace(":", "_")
+            if safe_tag in inventory:
+                inventory[safe_tag]["hosts"].append(v["HostName"])
+            else:
+                inventory[safe_tag] = {"hosts": [v["HostName"]]}
+
 print(json.dumps(inventory))
