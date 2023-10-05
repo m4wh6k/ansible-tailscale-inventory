@@ -31,6 +31,9 @@ all_hosts.append(
 )
 
 for v in all_hosts:
+    if v["HostName"] == "funnel-ingress-node":
+        continue
+
     inventory["all"]["hosts"].append(v["HostName"])
 
     inventory["_meta"]["hostvars"][v["HostName"]] = {
