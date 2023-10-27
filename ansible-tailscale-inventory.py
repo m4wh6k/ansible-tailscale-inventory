@@ -52,7 +52,7 @@ for v in all_hosts:
 
     if "Tags" in v:
         for tag in v["Tags"]:
-            safe_tag = tag.replace(":", "_")
+            safe_tag = tag.replace(":", "_").replace("-", "_")
             if safe_tag in inventory:
                 inventory[safe_tag]["hosts"].append(v["HostName"])
             else:

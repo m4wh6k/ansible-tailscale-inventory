@@ -18,7 +18,7 @@ and Linux, but not Windows.
 group
 - The `self` group includes the local host
 - Each Tailscale tag that has at least one host will be a group as well. The
-  name will be formatted as `tag_TagName`
+  name will be formatted as `tag_TagName` (dashes will be replace with underscores)
 
 ## Inventory Metadata
 The inventory automatically adds all available Tailscale IPs as a list in the
