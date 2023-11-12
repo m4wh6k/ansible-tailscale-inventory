@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from ansible_tailscale_inventory import (
     tailscale_status_to_ansible_inventory,
 )

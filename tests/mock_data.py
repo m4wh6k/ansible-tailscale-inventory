@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from ansible_tailscale_inventory import TailscaleStatusType, ansible_inventory_type
 
 mock_tailscale_status_output: TailscaleStatusType = {
