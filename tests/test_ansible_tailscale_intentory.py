@@ -9,8 +9,8 @@ from tests.mock_data import (
 
 def test_tailscale_status_to_ansible_inventory() -> None:
     """
-    Using mock data we test given mock tailscale output the ansible inventory matches
-    the expected output structure
+    Using mock data we test that fake tailscale output produces an expected ansible
+    inventory structure
     """
 
     assert (

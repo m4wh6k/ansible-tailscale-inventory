@@ -1,3 +1,5 @@
+.DEFAULT_GOAL = dev
+
 .PHONY: clean
 clean:
 	rm -rf \

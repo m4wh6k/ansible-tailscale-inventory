@@ -21,6 +21,6 @@ status output will produce an Ansible inventory in an expected format. The expec
 inputs and outputs are defined in `tests/mock_data.py`. For most changes it should be
 adequate to simply update the input and output data structures.
 
-A GitHub Actions workflow will test changes on Pull Request. It can only be run
+A GitHub Actions workflow will test changes on Pull Request. It can also be run
 on-demand against branches. The GH Actions workflow will run tests using multiple
 versions of python to ensure the script remains compatible.
