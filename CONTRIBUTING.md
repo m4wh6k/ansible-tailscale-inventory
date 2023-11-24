@@ -10,9 +10,9 @@ and changes to the script.
 Running `make dev` will install more pip dependencies.
 
 ## Formatting & Linting
-Code is expected to formatted and type annotated to conform with `black`, `mypy`, and
-`ruff`. Formatting can be tested with `make test`. Some formatting can be automatically
-applied by running `make fmt`.
+Code is expected to formatted and type annotated to conform with `mypy`, and `ruff`.
+Formatting can be tested with `make test`. Some formatting can be automatically applied
+by running `make fmt`.
 
 ## Testing
 We use `pytest` to ensure the script works as expected as we change things. Simply

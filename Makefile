@@ -15,15 +15,11 @@ dev:
 
 .PHONY: fmt
 fmt: dev
-	black .
+	ruff format .
 	ruff --fix .
 
 .PHONY: test
-test: test-black test-mypy test-pytest test-ruff
-
-.PHONY: test-black
-test-black: dev
-	black --check .
+test: test-mypy test-pytest test-ruff
 
 .PHONY: test-mypy
 test-mypy: dev
@@ -35,4 +31,5 @@ test-pytest: dev
 
 .PHONY: test-ruff
 test-ruff: dev
+	ruff format --check .
 	ruff check .
