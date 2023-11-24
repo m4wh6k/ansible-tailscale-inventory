@@ -4,7 +4,7 @@ strict = true
 implicit_reexport = true
 
 [tool.ruff]
-ignore = ["D", "EM", "T201", "TCH001", "TRY003"]
+ignore = ["COM812", "D", "EM", "ISC001", "T201", "TCH001", "TRY003"]
 select = ["ALL"]
 target-version = "py38"
 
