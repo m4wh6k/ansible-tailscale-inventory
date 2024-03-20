@@ -10,13 +10,13 @@ clean:
 		**/__pycache__
 
 .PHONY: dev
-dev: 
+dev:
 	pip3 install -U -r dev-requirements.txt
 
 .PHONY: fmt
 fmt: dev
 	ruff format .
-	ruff --fix .
+	ruff check --fix .
 
 .PHONY: test
 test: test-mypy test-pytest test-ruff
