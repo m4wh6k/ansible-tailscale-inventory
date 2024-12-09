@@ -7,7 +7,7 @@ implicit_reexport = true
 target-version = "py38"
 
 [tool.ruff.lint]
-ignore = ["COM812", "D", "EM", "ISC001", "T201", "TCH001", "TRY003"]
+ignore = ["COM812", "D", "EM", "ISC001", "T201", "TC001", "TRY003"]
 select = ["ALL"]
 
 [tool.ruff.lint.per-file-ignores]

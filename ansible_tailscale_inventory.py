@@ -112,8 +112,8 @@ def get_tailscale_status() -> TailscaleStatusType:
         sys.exit(1)
 
     try:
-        tailscale_proc = subprocess.run(
-            [tailscale_cmd, "status", "--self", "--json"],  # noqa: S603
+        tailscale_proc = subprocess.run(  # noqa: S603
+            [tailscale_cmd, "status", "--self", "--json"],
             capture_output=True,
             check=True,
         )
@@ -169,6 +169,7 @@ def assemble_inventory(
         if host_data["HostName"] == "funnel-ingress-node":
             continue
 
+        # We ignore endpoints that have no OS, like Mullvad exit nodes
         if not host_data["OS"]:
             continue
 
