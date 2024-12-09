@@ -112,8 +112,8 @@ def get_tailscale_status() -> TailscaleStatusType:
         sys.exit(1)
 
     try:
-        tailscale_proc = subprocess.run(
-            [tailscale_cmd, "status", "--self", "--json"],  # noqa: S603
+        tailscale_proc = subprocess.run(  # noqa: S603
+            [tailscale_cmd, "status", "--self", "--json"],
             capture_output=True,
             check=True,
         )
