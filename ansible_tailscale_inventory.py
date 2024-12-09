@@ -169,6 +169,9 @@ def assemble_inventory(
         if host_data["HostName"] == "funnel-ingress-node":
             continue
 
+        if not host_data["OS"]:
+            continue
+
         # We add each host to the list of all hosts
         inventory["groups"]["all"].append(host_data["HostName"])
 
