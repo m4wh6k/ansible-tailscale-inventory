@@ -169,6 +169,7 @@ def assemble_inventory(
         if host_data["HostName"] == "funnel-ingress-node":
             continue
 
+        # We ignore endpoints that have no OS, like Mullvad exit nodes
         if not host_data["OS"]:
             continue
 
