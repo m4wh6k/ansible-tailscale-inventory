@@ -6,7 +6,7 @@ issues](https://github.com/m4wh6k/ansible-tailscale-inventory/issues) and propos
 ## Development dependencies
 
 - `make`
-- `python` 3.8 or higher
+- `python` 3.10 or higher
 
 Running `make dev` will install more pip dependencies.
 
