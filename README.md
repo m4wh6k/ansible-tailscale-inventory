@@ -1,7 +1,7 @@
 # ansible-tailscale-inventory
 
 Dependency-free dynamic Ansible inventory for your Tailscale hosts. Allows you to reach your Tailscale hosts easily with
-Ansible. All you need is Tailscale installed and working, python 3.8+, and a copy of `ansible_tailscale_inventory.py`
+Ansible. All you need is Tailscale installed and working, python 3.10+, and a copy of `ansible_tailscale_inventory.py`
 from this repo.
 
 ## Usage

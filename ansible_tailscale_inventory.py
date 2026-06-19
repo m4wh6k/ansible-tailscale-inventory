@@ -27,9 +27,9 @@ import json
 import platform
 import subprocess
 import sys
-from typing import Any, Dict, List, TypedDict, Union
+from typing import Any, TypedDict
 
-ansible_inventory_type = Dict[str, Dict[str, Union[List[str], Dict[str, Any]]]]
+ansible_inventory_type = dict[str, dict[str, list[str] | dict[str, Any]]]
 
 
 class InventoryType(TypedDict):
